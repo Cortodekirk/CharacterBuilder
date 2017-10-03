@@ -11,10 +11,12 @@ class App extends Component {
     return (
       <div className="App">
         <Name Name="Meridian" Points="200" /><br />
-      	<table>
-      		<tr><td><Stat Name="PSY" /></td><td><Stat Name="WAR" /></td></tr>
-      		<tr><td><Stat Name="STR" /></td><td><Stat Name="END" /></td></tr>
-      	</table>
+        <div className="StatContainer">
+          <Stat Name="PSY" />
+          <Stat Name="WAR" />
+          <Stat Name="STR" />
+          <Stat Name="END" />
+        </div>
       	<Description />
       	<Powers />
         <Skills />
